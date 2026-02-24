@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мій сучасний сайт</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="#">MySite</a>
+
+      <nav class="nav" id="nav">
+        <a href="#about">Про мене</a>
+        <a href="#work">Проєкти</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="icon" id="themeBtn" title="Тема">🌙</button>
+        <button class="icon burger" id="burger" title="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-left">
+          <div class="pill">⚡ Сучасний лендінг за 1 вечір</div>
+          <h1>Сайт, який виглядає “дорого”</h1>
+          <p class="muted">
+            Мінімалізм, адаптив під телефон, чистий дизайн. Можемо заточити під бізнес або портфоліо.
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#contact">Зв’язатися</a>
+            <a class="btn ghost" href="#work">Подивитись проєкти</a>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi">
+              <div class="kpi-num" data-count="3">0</div>
+              <div class="muted">дні до запуску</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi-num" data-count="7">0</div>
+              <div class="muted">ідей у роботі</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi-num" data-count="12">0</div>
+              <div class="muted">версій дизайну</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="glass">
+            <div class="glass-top">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="muted">preview</span>
+            </div>
+            <h3>Структура “як у людей”</h3>
+            <p class="muted">Hero → переваги → проєкти → контакти.</p>
+            <div class="bars">
+              <div class="bar w90"></div>
+              <div class="bar w75"></div>
+              <div class="bar w55"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <h2>Про мене</h2>
+        <p class="muted">Тут коротко: хто ти, чим займаєшся, що пропонуєш.</p>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Швидко</h3>
+            <p class="muted">Зрозуміла структура і чистий код.</p>
+          </div>
+          <div class="card">
+            <h3>Естетично</h3>
+            <p class="muted">Сучасний стиль без “колхоза”.</p>
+          </div>
+          <div class="card">
+            <h3>Адаптивно</h3>
+            <p class="muted">Нормально виглядає на телефоні.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <h2>Проєкти</h2>
+        <p class="muted">Клікай — відкриється короткий опис.</p>
+
+        <div class="grid3">
+          <button class="card card-btn" data-title="Проєкт 1" data-text="Опис: що це, який результат, для кого.">
+            <h3>Проєкт 1</h3>
+            <p class="muted">Лендінг / сайт</p>
+          </button>
+
+          <button class="card card-btn" data-title="Проєкт 2" data-text="Опис: калькулятор, бізнес-сторінка, портфоліо.">
+            <h3>Проєкт 2</h3>
+            <p class="muted">Калькулятор</p>
+          </button>
+
+          <button class="card card-btn" data-title="Проєкт 3" data-text="Опис: дизайн, прототип, презентація.">
+            <h3>Проєкт 3</h3>
+            <p class="muted">Портфоліо</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <h2>Контакти</h2>
+        <p class="muted">Форма поки без сервера — просто показує “готово”.</p>
+
+        <form class="form" id="form">
+          <label>Ім’я
+            <input name="name" placeholder="Дмитро" required />
+          </label>
+          <label>Телефон або Telegram
+            <input name="contact" placeholder="+380..." required />
+          </label>
+          <label>Повідомлення
+            <textarea name="msg" placeholder="Що треба зробити?" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Надіслати</button>
+          <div class="muted" id="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <span class="muted">© <span id="year"></span> MySite</span>
+      <span class="muted">Made with ❤️</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <strong id="mTitle">Title</strong>
+        <button class="icon" id="closeModal" title="Закрити">✕</button>
+      </div>
+      <p class="muted" id="mText"></p>
+      <div class="modal-actions">
+        <button class="btn ghost" id="okModal">Ок</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
