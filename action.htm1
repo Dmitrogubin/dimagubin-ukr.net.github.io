@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Що робити: план виходу</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="index.html">MySite</a>
+      <nav class="nav" id="nav">
+        <a href="index.html#about">Про мене</a>
+        <a href="poverty.html">Бідність (факти)</a>
+        <a href="inequality.html">Нерівність (факти)</a>
+        <a href="action.html">Що робити</a>
+        <a href="index.html#contact">Контакти</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon" id="themeBtn" title="Тема">🌙</button>
+        <button class="icon burger" id="burger" title="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="pill">📌 Сторінка 3/3</div>
+        <h1>Ок. А що робити конкретно?</h1>
+        <p class="muted">План без магії: стабілізуй базу → підніми дохід → створи актив.</p>
+        <div class="cta">
+          <a class="btn" href="index.html#contact">Зв’язатися</a>
+          <a class="btn ghost" href="inequality.html">← Назад</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>План на 30 днів</h2>
+        <div class="grid3">
+          <div class="card">
+            <h3>1) База (тиждень 1)</h3>
+            <p class="muted">
+              Витрати → список; відрізати зайве; зробити резерв хоча б 5–10% доходу.
+            </p>
+          </div>
+          <div class="card">
+            <h3>2) Дохід (тиждень 2–3)</h3>
+            <p class="muted">
+              Підняти ціну праці: навик/підробіток/послуга. Мета — +10–30% до доходу.
+            </p>
+          </div>
+          <div class="card">
+            <h3>3) Актив (тиждень 4)</h3>
+            <p class="muted">
+              1 актив, який масштабується: мікро-бізнес / сервіс / інструмент / сайт.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Чому це працює</h3>
+          <p class="muted">
+            Дані про бідність/нерівність показують одну річ: найбільший ризик — нестабільний дохід і відсутність буфера,
+            а найбільша перевага — активи й масштаб. :contentReference[oaicite:7]{index=7}
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Хочеш чек-ліст під тебе?</h3>
+          <p class="muted">
+            Напиши в контактах: “план”. Я зроблю тобі короткий план під твою ситуацію (доходи/місто/ідеї).
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <span class="muted">© <span id="year"></span> MySite</span>
+      <span class="muted">Сторінка 3/3</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
